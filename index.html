@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário</h1>
-    <div class="container">
+        <header class="header">
+            <h1>Formulário</h1>
+            <div class="container">
+                <h2 id="title">Just training</h2>
+        </header>
 
-        <h1 id="title">Form</h1>
-
-        <form action="" method="post">
+        <form action="" method="post" id="form-all">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required placeholder="Enter your name">
@@ -42,14 +44,15 @@
 
             <div class="form-group">
                 <p>Would you recommend freeCodeCamp to a friend?</p>
-                <input type="radio" name="definitely" id="input-radio">Definitely</input>
-                <input type="radio" name="maybe" id="input-radio">Maybe</input>
-                <input type="radio" name="not sure" id="input-radio">Not sure</input>
+                <input type="radio" name="choice" class="input-radio" value="definitely" checked>Definitely</input>
+                <input type="radio" name="choice" value="maybe" class="input-radio">Maybe</input>
+                <input type="radio" name="choice" value="not sure" class="input-radio">Not sure</input>
             </div>
 
             <div class="form-group">
                 <p>What is your favorite feature of freeCodeCamp?</p>
-                <select name="feature" id="form-control">
+                <select name="feature" class="form-control">
+                    <option value="select" disabled selected>Select an option</option>
                     <option value="changelles">Changelles</option>
                     <option value="projects">Projects</option>
                     <option value="community">Community</option>
@@ -72,12 +75,9 @@
             <label for="add"><input type="checkbox" name="prefer" id="add" class="input-checkbox">Additional Courses</input></label>
 
             <p>Any comments or suggestions?</p>
-            <textarea name="" id="input-textarea" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+            <textarea name="" class="input-textarea" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
 
-            <input type="submit">Submit</input>
-
-
-
+            <input type="submit" value="Submit" class="input-submit"></input>
 
 
         </form>
