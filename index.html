@@ -10,7 +10,7 @@
 </head>
 <body>
         <header class="header">
-            <h1>Formulário</h1>
+            <h1>Form</h1>
             <div class="container">
                 <h2 id="title">Just training</h2>
         </header>
@@ -43,11 +43,14 @@
                 </select>
             </div>
 
-            <div class="form-group">
-                <p>Would you recommend freeCodeCamp to a friend?</p>
-                <input type="radio" name="choice" class="input-radio" value="definitely" checked>Definitely</input>
-                <input type="radio" name="choice" value="maybe" class="input-radio">Maybe</input>
-                <input type="radio" name="choice" value="not sure" class="input-radio">Not sure</input>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="form-group label-radio">
+                <input type="radio" name="choice" class="input-radio" id="definitely" checked></input>
+                <label for="definitely">Definitely</label>
+                <input type="radio" name="choice" id="maybe" class="input-radio"></input>
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="choice" id="not sure" class="input-radio"></input>
+                <label for="not-sure">Not sure</label>
             </div>
 
             <div class="form-group">
